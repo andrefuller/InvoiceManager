@@ -1,7 +1,12 @@
 {
-  "name": "ui",
+  "name": "invoice_manager",
+  "author": "André Fuller",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=14"
+  },
   "scripts": {
     "dev": "concurrently \"node -r dotenv/config\" \"next dev\"",
     "build": "concurrently \"node -r dotenv/config\" \"next build\"",

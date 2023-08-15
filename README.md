@@ -54,25 +54,31 @@
 
 - `node` >= v14.21.3
 
+<br />
+
 ##### Starting the App:
 
-First, clone the repository locally, then run the following:
-
+1.  Clone the repository locally, then run the following:
 ```shell
 $ npm install # Install dependencies (required for every step hereafter)
+```
+2. Sign up for a free (or use an existing) API Key from https://openexchangerates.org/.
+3. Create an `.env` file in the root directory with the following environment variable and include the API key from the previous step:
+```shell
+NEXT_PUBLIC_OPEN_EXCHANGES_APP_ID="INSERT_APP_ID_HERE"
+``````
+4. Run the following command:
+```shell
 $ npm run dev # Start the development server
 ```
+5. Open [http://localhost:3000/](http://localhost:3000/) in a browser to view the application.
+
+<br />
 
 ##### Create Production Build:
 
 ```shell
-$ npm run build # Required for preview task below
-```
-
-##### Preview Production Build:
-
-```shell
-$ npm run preview
+$ npm run build
 ```
 
 ##### Running Tests:
